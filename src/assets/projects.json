@@ -1,0 +1,74 @@
+[
+	{
+		"name": "RC Collaborator",
+		"description": "Full-stack application for Recursers to showcase projects and foster collaboration. Implemented authentication with RC's OAuth API, established end-to-end and unit tests, created a responsive UI, and established a CI and deployment pipeline using GitHub Actions.",
+		"liveUrl": "https://projects.recurse.com/",
+		"codeUrl": "https://github.com/artsze/rc-prjkt",
+		"tags": ["react", "typescript", "node/express", "mongodb", "oauth2.0", "cypress", "jest", "materialui", "react-query"],
+		"image": "images/rc-projects.png",
+		"date": "August 2021"
+	},
+	{
+		"name": "GitHub Star Tagger",
+		"description": "Application that fetches starred repos from GitHub's REST API and allows users to add and filter tags.",
+		"live-url": "https://flamanda.com/github-star-tagger/",
+		"code-url": "https://github.com/apettenati/github-star-tagger",
+		"tags": ["typescript", "react", "rest api", "rootstrap"],
+		"image": "images/github-star-tagger.png",
+		"date": "May 2021"
+	},
+	{
+		"name": "Cost of Drinking",
+		"description": "Interactive map displaying the cost of living index based on beer prices. Scraped, cleaned, and merged data from multiple sources. Joined the data with geographical information and created dataframes.",
+		"live-url": "https://christalee.teallabs.org/pages/cost-of-drinking.html",
+		"code-url": "https://github.com/christalee/cost-of-drinking",
+		"tags": ["python", "beautiful soup", "pandas", "jupyter notebooks"],
+		"image": "images/cost-of-drinking.png",
+		"date": "January 2021"
+	},
+	{
+		"name": "MST Waypoint to Trackpoint Converter",
+		"description": "Conversion tool for the Mountains to Sea Trail, a local nonprofit, to map waypoint data to the closest corresponding trackpoint. Converts data into a standardized CSV format for download.",
+		"live-url": "https://apettenati.github.io/mountains-to-sea-trail/",
+		"code-url": "https://github.com/apettenati/mountains-to-sea-trail",
+		"tags": ["typescript", "html/css", "csv parser", "geolib"],
+		"image": "images/mst.png",
+		"date": "April 2021"
+	},
+	{
+		"name": "NC Nonprofit Job Scraper",
+		"description": "Tool which scrapes new nonprofit jobs from an NC job site and sends results as a Telegram message.",
+		"live-url": "",
+		"code-url": "https://github.com/apettenati/ncnonprofit-jobscraper",
+		"tags": ["python", "beautiful soup", "telegram api", "argparse"],
+		"image": "images/job-scraper.jpg",
+		"date": "December 2020"
+	},
+	{
+		"name": "Etch-A-Sketch",
+		"description": "Etch-A-Sketch created with HTML, CSS, and JavaScript to learn about CSS Grid.",
+		"live-url": "https://apettenati.github.io/the-odin-project/etch-a-sketch/index.html",
+		"code-url": "https://github.com/apettenati/the-odin-project/tree/main/etch-a-sketch",
+		"tags": ["javascript", "HTML", "CSS"],
+		"image": "images/etch-a-sketch.png",
+		"date": "March 2020"
+	},
+	{
+		"name": "Calculator",
+		"description": "Calculator created with HTML, CSS, and JavaScript including keyboard shortcuts",
+		"live-url": "https://apettenati.github.io/the-odin-project/calculator/index.html",
+		"code-url": "https://github.com/apettenati/the-odin-project/tree/main/calculator",
+		"tags": ["javascript", "HTML", "CSS"],
+		"image": "images/calculator.png",
+		"date": "March 2020"
+	},
+	{
+		"name": "\"Pearl\"-sonal Finance Hacker",
+		"description": "Personal Finance Flowchart and checklist created at Pearl Hacks 2021 Hackathon ",
+		"live-url": "https://apettenati.github.io/pearlhacks2021/index.html",
+		"code-url": "https://github.com/apettenati/pearlhacks2021",
+		"tags": ["javascript", "HTML", "CSS"],
+		"image": "images/pearl-hacks.png",
+		"date": "March 2020"
+	}
+]
