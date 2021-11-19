@@ -1,5 +1,5 @@
-import { AppBar, Toolbar, Typography, Button } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   appbar: {
@@ -7,26 +7,25 @@ const useStyles = makeStyles({
   },
   toolbar: {
     paddingLeft: "75px",
-    paddingRight: "75px"
+    paddingRight: "75px",
   },
   header: {
     flexGrow: 1,
   },
   button: {
-    margin: "10px"
-  }
+    margin: "10px",
+  },
 });
-
 
 export default function Projects(): JSX.Element {
   const classes = useStyles();
 
   function scrollToSection(id: string) {
-    console.log(id)
-    const section = document.querySelector(id)
+    console.log(id);
+    const section = document.querySelector(id);
     if (section) {
-      console.log('in if')
-      section.scrollIntoView({ behavior: 'smooth' })
+      console.log("in if");
+      section.scrollIntoView({ behavior: "smooth" });
     }
   }
   return (
@@ -35,12 +34,39 @@ export default function Projects(): JSX.Element {
         <Typography className={classes.header} variant="h6" component="div">
           Amanda Pettenati
         </Typography>
-        <Button className={classes.button} onClick={() => scrollToSection("#about")} size="large" color="inherit">About</Button>
-        <Button className={classes.button} onClick={() => scrollToSection("#skills")} size="large" color="inherit">Skills</Button>
-        <Button className={classes.button} onClick={() => scrollToSection("#projects")} size="large" color="inherit">Projects</Button>
-        <Button className={classes.button} onClick={() => scrollToSection("#contact")} size="large" color="inherit">Contact</Button>
+        <Button
+          className={classes.button}
+          onClick={() => scrollToSection("#about")}
+          size="large"
+          color="inherit"
+        >
+          About
+        </Button>
+        <Button
+          className={classes.button}
+          onClick={() => scrollToSection("#skills")}
+          size="large"
+          color="inherit"
+        >
+          Skills
+        </Button>
+        <Button
+          className={classes.button}
+          onClick={() => scrollToSection("#projects")}
+          size="large"
+          color="inherit"
+        >
+          Projects
+        </Button>
+        <Button
+          className={classes.button}
+          onClick={() => scrollToSection("#contact")}
+          size="large"
+          color="inherit"
+        >
+          Contact
+        </Button>
       </Toolbar>
     </AppBar>
   );
 }
-
