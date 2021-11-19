@@ -5,9 +5,8 @@ export default function Section(props: any): JSX.Element {
   const classes = useStyles();
 
   return (
-    <Container className={classes.section}>
+    <Container id={props.header.toLowerCase()} className={classes.section}>
       <Typography
-        id="contact"
         className={classes.headerUnderline}
         component="h2"
         variant="h1"
