@@ -23,13 +23,6 @@
 			{"name": "Linux", "icon": "flat-color-icons:linux"}
 		]}
 	],
-	"contact": [
-		{ "name": "resume", "href": "https://flamanda.com/resume/amanda-pettenati.pdf", "icon": "carbon:document-download"},
-		{ "name": "email", "href": "mailto:amanda@pettenati.net", "icon": "ic:baseline-email"},
-		{ "name": "linkedin", "href": "https://www.linkedin.com/in/amandapettenati/", "icon": "brandico:linkedin-rect"},
-		{ "name": "github", "href": "https://github.com/apettenati", "icon": "jam:github"},
-		{ "name": "blog", "href": "https://flamanda.com/", "icon": "jam:write"}
-	],
 	"projects": [
 		{
 			"name": "RC Collaborator",
@@ -103,6 +96,13 @@
 			"image": "images/pearl-hacks.png",
 			"date": "March 2020"
 		}
+	],
+	"contact": [
+		{ "name": "resume", "href": "https://flamanda.com/resume/amanda-pettenati.pdf", "icon": "carbon:document-download"},
+		{ "name": "email", "href": "mailto:amanda@pettenati.net", "icon": "ic:baseline-email"},
+		{ "name": "linkedin", "href": "https://www.linkedin.com/in/amandapettenati/", "icon": "brandico:linkedin-rect"},
+		{ "name": "github", "href": "https://github.com/apettenati", "icon": "jam:github"},
+		{ "name": "blog", "href": "https://flamanda.com/", "icon": "jam:write"}
 	]
 }
 

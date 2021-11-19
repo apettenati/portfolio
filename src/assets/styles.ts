@@ -11,6 +11,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   //section
   section: {
+    scrollMarginTop: "100px",
     marginBottom: theme.spacing(12),
   },
   // skills
@@ -49,7 +50,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   headerUnderline: {
     // prevent navbar from covering start of component when clicking nav links
-    scrollMarginTop: "100px",
     marginBottom: theme.spacing(6),
     fontWeight: "bold",
     position: "relative",
@@ -118,7 +118,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "20px 30px",
     backgroundColor: "#f6e5df",
     "&:hover": {
-      backgroundColor: "#023c40",
+      backgroundColor: "#6e8778",
       color: "white",
     },
   },
@@ -131,6 +131,35 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyItems: "center",
+    alignItems: "center",
+  },
+  //appbar
+  appbar: {
+    backgroundColor: "#6e8778",
+  },
+  toolbar: {
+    paddingLeft: "75px",
+    paddingRight: "75px",
+  },
+  header: {
+    flexGrow: 1,
+  },
+  appbarButton: {
+    margin: "10px",
+  },
+  //footer
+  footerImg: {
+    width: "100%",
+    marginTop: "-500px",
+    position: "sticky",
+    zIndex: -2,
+    mixBlendMode: "hard-light",
+  },
+  footerNav: {
+    backgroundColor: "#6e8778",
+    width: "100%",
+    color: "white",
+    margin: "-5px 0",
     alignItems: "center",
   },
 }));
