@@ -1,27 +1,13 @@
 import { Typography, BottomNavigation } from "@material-ui/core";
+import { useStyles } from "../assets/styles";
 
 export default function Footer(): JSX.Element {
+  const classes = useStyles();
+
   return (
     <footer>
-      <img
-        style={{
-          width: "100%",
-          marginTop: "-500px",
-          position: "sticky",
-          zIndex: -2,
-          mixBlendMode: "hard-light",
-        }}
-        src="/images/background.jpg"
-      ></img>
-      <BottomNavigation
-        style={{
-          backgroundColor: "#6e8778",
-          width: "100%",
-          color: "white",
-          margin: "-5px 0",
-          alignItems: "center",
-        }}
-      >
+      <img className={classes.footerImg} src="/images/background.jpg"></img>
+      <BottomNavigation className={classes.footerNav}>
         <Typography>Created by Amanda Pettenati © 2021</Typography>
       </BottomNavigation>
     </footer>
