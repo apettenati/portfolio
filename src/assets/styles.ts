@@ -74,7 +74,7 @@ export const useStyles = makeStyles((theme) => ({
     background: "#f2d7ce",
     border: "1px solid #444045",
     margin: "2px",
-    padding: theme.spacing(0.5),
+    padding: theme.spacing(0.25),
   },
 
   cardHeader: {
@@ -113,14 +113,22 @@ export const useStyles = makeStyles((theme) => ({
   contactButton: {
     border: "2px solid #444045",
     boxShadow: "5px 5px 2px 1px #d5795d",
-    fontSize: "20px",
     color: "#444045",
-    padding: "20px 30px",
     backgroundColor: "#f6e5df",
     "&:hover": {
       backgroundColor: "#6e8778",
       color: "white",
     },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "20px",
+      padding: "20px 30px",
+    },
+  },
+  iconMargin: {
+    marginRight: theme.spacing(0.5),
+  },
+  contactGridMargin: {
+    marginTop: theme.spacing(4),
   },
   //skill
   skillText: {
@@ -138,10 +146,14 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "#6e8778",
   },
   toolbar: {
-    paddingLeft: "75px",
-    paddingRight: "75px",
+    // paddingLeft: theme.spacing(9),
+    // paddingRight: theme.spacing(9),
   },
   header: {
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+    width: "50%",
     flexGrow: 1,
   },
   appbarButton: {

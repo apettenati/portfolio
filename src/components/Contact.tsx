@@ -16,29 +16,31 @@ export default function Contact(): JSX.Element {
 
   function ContactButton({ item }: IContactItem) {
     return (
-      <Button
-        className={classes.contactButton}
-        startIcon={
-          <Icon
-            fr=""
-            icon={item.icon}
-            height="25px"
-            style={{ marginRight: "5px" }}
-          />
-        }
-        href={item.href}
-      >
-        {item.name}
-      </Button>
+      <Grid item>
+        <Button
+          className={classes.contactButton}
+          startIcon={
+            <Icon
+              fr=""
+              icon={item.icon}
+              height="25px"
+              className={classes.iconMargin}
+            />
+          }
+          href={item.href}
+        >
+          {item.name}
+        </Button>
+      </Grid>
     );
   }
 
   return (
     <Section header="Contact">
       <Grid
-        style={{ marginTop: "50px" }}
+        className={classes.contactGridMargin}
         container
-        spacing={4}
+        spacing={2}
         justifyContent="space-evenly"
       >
         {contact.map((item, index) => {

@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { Grid, AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import data from "../assets/projects.json";
 import { useStyles } from "../assets/styles";
 
@@ -15,26 +15,29 @@ export default function Projects(): JSX.Element {
 
   function HeaderLink({ header }: { header: string }) {
     return (
-      <Button
-        className={classes.appbarButton}
-        onClick={() => scrollToSection(`#${header}`)}
-        size="large"
-        color="inherit"
-      >
-        {header}
-      </Button>
+      <Grid item>
+        <Button
+          className={classes.appbarButton}
+          onClick={() => scrollToSection(`#${header}`)}
+          color="inherit"
+        >
+          {header}
+        </Button>
+      </Grid>
     );
   }
 
   return (
     <AppBar className={classes.appbar} position="sticky">
-      <Toolbar className={classes.toolbar}>
+      <Toolbar>
         <Typography className={classes.header} variant="h6" component="div">
           Amanda Pettenati
         </Typography>
-        {headers.map((header, index) => (
-          <HeaderLink key={index} header={header} />
-        ))}
+        <Grid justifyContent="flex-end" container>
+          {headers.map((header, index) => (
+            <HeaderLink key={index} header={header} />
+          ))}
+        </Grid>
       </Toolbar>
     </AppBar>
   );

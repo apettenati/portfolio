@@ -9,12 +9,12 @@ export default function About(): JSX.Element {
   return (
     <Section header="About">
       <Grid container className={classes.border}>
-        <Grid className={classes.textPadding} item xs={5}>
+        <Grid className={classes.textPadding} item xs={12} lg={5}>
           <Typography component="p" variant="body1">
             {about}
           </Typography>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12} lg={7}>
           <img className={classes.image} src="/images/hike.jpg"></img>
         </Grid>
       </Grid>
