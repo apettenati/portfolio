@@ -38,7 +38,7 @@
 			"description": "Application that fetches starred repos from GitHub's REST API and allows users to add and filter tags.",
 			"liveUrl": "https://flamanda.com/github-star-tagger/",
 			"codeUrl": "https://github.com/apettenati/github-star-tagger",
-			"tags": ["typescript", "react", "rest api", "rootstrap"],
+			"tags": ["typescript", "react", "rest api", "bootstrap"],
 			"image": "images/github-star-tagger.png",
 			"date": "May 2021"
 		},
