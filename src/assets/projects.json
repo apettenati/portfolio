@@ -17,8 +17,7 @@
 		]},
 		{"header" : "Tools", "skills": [
 			{"name": "Cypress", "icon": "logos:cypress"},
-			{"name": "Jest", "icon": "logos:jest"},
-			{"name": "Webpack", "icon": "logos:webpack"},
+			{"name": "Jest", "icon": "logos:jest"}, {"name": "Webpack", "icon": "logos:webpack"},
 			{"name": "Vim", "icon": "logos:vim"},
 			{"name": "Linux", "icon": "flat-color-icons:linux"}
 		]}
@@ -70,6 +69,15 @@
 			"date": "December 2020"
 		},
 		{
+			"name": "\"Pearl\"-sonal Finance Hacker",
+			"description": "Personal Finance Flowchart and checklist created at Pearl Hacks 2021 Hackathon ",
+			"liveUrl": "https://apettenati.github.io/pearlhacks2021/index.html",
+			"codeUrl": "https://github.com/apettenati/pearlhacks2021",
+			"tags": ["javascript", "HTML", "CSS"],
+			"image": "images/pearl-hacks.png",
+			"date": "March 2020"
+		},
+		{
 			"name": "Etch-A-Sketch",
 			"description": "Etch-A-Sketch created with HTML, CSS, and JavaScript to learn about CSS Grid.",
 			"liveUrl": "https://apettenati.github.io/the-odin-project/etch-a-sketch/index.html",
@@ -85,15 +93,6 @@
 			"codeUrl": "https://github.com/apettenati/the-odin-project/tree/main/calculator",
 			"tags": ["javascript", "HTML", "CSS"],
 			"image": "images/calculator.png",
-			"date": "March 2020"
-		},
-		{
-			"name": "\"Pearl\"-sonal Finance Hacker",
-			"description": "Personal Finance Flowchart and checklist created at Pearl Hacks 2021 Hackathon ",
-			"liveUrl": "https://apettenati.github.io/pearlhacks2021/index.html",
-			"codeUrl": "https://github.com/apettenati/pearlhacks2021",
-			"tags": ["javascript", "HTML", "CSS"],
-			"image": "images/pearl-hacks.png",
 			"date": "March 2020"
 		}
 	],
