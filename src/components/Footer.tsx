@@ -6,7 +6,7 @@ export default function Footer(): JSX.Element {
 
   return (
     <footer>
-      <img className={classes.footerImg} src="/images/background.jpg"></img>
+      <img className={classes.footerImg} src="./images/background.jpg"></img>
       <BottomNavigation className={classes.footerNav}>
         <Typography variant="body2">
           Created by Amanda Pettenati © 2021

@@ -19,7 +19,7 @@ export default function About(): JSX.Element {
           </Typography>
         </Grid>
         <Grid item xs={12} lg={7}>
-          <img className={classes.image} src="/images/hike.jpg"></img>
+          <img className={classes.image} src="./images/hike.jpg"></img>
         </Grid>
       </Grid>
     </Section>
