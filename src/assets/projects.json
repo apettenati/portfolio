@@ -1,5 +1,5 @@
 {
-	"about": "Hi! I'm a self-taught full-stack developer. I embarked on this journey after a decade in the Finance industry. After a successful career in management, I decided solving complex problems as an independent contributor was more in line with my interests. I have had a blast teaching myself the ins-and-outs of web development over the last year and am ready to join a company who appreciates my self-motivation.",
+	"about": "Welcome to my portfolio! \n\n I'm a self-taught web developer. I embarked on this journey after nearly a decade in the Finance industry. After a successful career in management, I decided solving complex problems as an independent contributor is my passion. \n\n After 2 batches at the Recurse Center, building a number of solo and collaborative projects, and volunteering for some great local causes, I'm ready to begin my first professional role as a full-stack or front-end software engineer for a company that values my self-motivation and eagerness to learn.",
 	"skills": [
 		{"header" : "Languages", "skills": [
 			{"name": "JavaScript", "icon": "logos:javascript"},
@@ -8,7 +8,7 @@
 			{"name": "CSS", "icon": "vscode-icons:file-type-css"},
 			{"name": "Python", "icon": "logos:python"}
 		]},
-		{"header" : "Frameworks & Libraries", "skills": [
+		{"header" : "Frameworks", "skills": [
 			{"name": "React", "icon": "logos:react"},
 			{"name": "Node.js", "icon": "vscode-icons:file-type-node"},
 			{"name": "Express.js", "icon": "simple-icons:express"},
