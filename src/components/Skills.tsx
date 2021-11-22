@@ -1,18 +1,9 @@
 import { skills } from "../assets/projects.json";
 import { Card, CardContent, Grid, Typography } from "@material-ui/core";
 import { useStyles } from "../assets/styles";
+import { ISkill, ISkillSection } from "../assets/types";
 import { Icon } from "@iconify/react";
 import Section from "./Section";
-
-interface ISkill {
-  name: string;
-  icon: string;
-}
-
-interface ISkillSection {
-  header: string;
-  skills: ISkill[];
-}
 
 export default function Skills(): JSX.Element {
   const classes = useStyles();
@@ -29,7 +20,7 @@ export default function Skills(): JSX.Element {
         </Typography>
         <Card className={classes.skillCard}>
           <CardContent>
-            <Grid container spacing={6} justifyContent="space-evenly">
+            <Grid container spacing={4} justifyContent="space-evenly">
               {skills.map((skill: ISkill, index) => {
                 return (
                   <Skill key={index} name={skill.name} icon={skill.icon} />

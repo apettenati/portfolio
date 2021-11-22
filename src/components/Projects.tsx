@@ -12,18 +12,9 @@ import {
 import { useStyles } from "../assets/styles";
 import { Link, GitHub } from "@material-ui/icons";
 import Section from "./Section";
+import { IProject } from "../assets/types";
 
 // TODO: update root font size and change other font sizes to rem
-
-interface IProject {
-  name: string;
-  description: string;
-  liveUrl: string;
-  codeUrl: string;
-  tags: string[];
-  image: string;
-  date: string;
-}
 
 export default function Projects(): JSX.Element {
   const classes = useStyles();
@@ -33,6 +24,7 @@ export default function Projects(): JSX.Element {
       <Grid xs={12} md={6} lg={4} item>
         <Card className={classes.projectsRoot}>
           <CardMedia
+            component="img"
             className={classes.media}
             image={project.image}
             title={project.name}
