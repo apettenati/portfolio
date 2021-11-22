@@ -3,8 +3,18 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles((theme) => ({
   codeLabels: {
     margin: theme.spacing(1),
-    fontSize: "2rem",
-    padding: "10px 20px",
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
+    backgroundColor: "#d5795d", //dark pink
+    color: "white",
+    "&:hover": {
+      backgroundColor: "#6e8778",
+    },
+    "&:disabled": {
+      backgroundColor: "#d5795d", //dark pink
+      color: "white",
+      opacity: "60%",
+    },
   },
   marginTop: {
     marginTop: theme.spacing(0.5),
@@ -18,7 +28,8 @@ export const useStyles = makeStyles((theme) => ({
   skillCard: {
     // background: "#eec9be",
     // background: "#f2d7ce",
-    background: "#fbf2ef",
+    // backgroundColor: "#fbf2ef", // light pink
+    backgroundColor: "#fefcf9", // offwhite
     // background: "white",
     // boxShadow: "5px 5px 5px gray",
     border: "2px solid #444045",
@@ -37,11 +48,10 @@ export const useStyles = makeStyles((theme) => ({
       content: "no-open-quote",
       position: "absolute",
       // left: "-5%",
-      bottom: "6px",
+      bottom: "8px",
       width: "15%",
       height: "4px",
-      background: "#d5795d",
-      backgroundColor: "#d5795d",
+      backgroundColor: "#d5795d", //dark pink
       transform: "skew(-12deg)",
       // borderRadius: "2px",
       // boxShadow: "0px 0px 2px 1px #d5795d",
@@ -59,7 +69,7 @@ export const useStyles = makeStyles((theme) => ({
       content: "no-open-quote",
       position: "absolute",
       // left: "-5%",
-      bottom: "16px",
+      bottom: "18px",
       width: "40%",
       height: "14px",
       background: "#d5795d",
@@ -71,10 +81,10 @@ export const useStyles = makeStyles((theme) => ({
   // projects
   chip: {
     // fontSize: "1rem",
-    background: "#f2d7ce",
-    border: "1px solid #444045",
+    // border: "1px solid #444045",
+    backgroundColor: "#f3d7ce", // pink
     margin: "2px",
-    padding: theme.spacing(0.25),
+    // padding: theme.spacing(0.25),
   },
 
   cardHeader: {
@@ -86,14 +96,15 @@ export const useStyles = makeStyles((theme) => ({
   },
   gap: { "& span": { gap: "5px" } },
   projectsRoot: {
-    background: "#fbf2ef",
+    // backgroundColor: "#fbf2ef", // light pink
+    backgroundColor: "#fefcf9", // offwhite
     border: "2px solid #444045",
     boxShadow: "5px 5px 2px 1px #d5795d",
     flexGrow: 1,
   },
   media: {
-    height: 0,
-    paddingTop: "56.25%", // set aspect ratio of img to 16:9
+    maxHeight: "300px",
+    objectPosition: "top",
   },
   // about
   border: {
@@ -102,8 +113,11 @@ export const useStyles = makeStyles((theme) => ({
     boxShadow: "5px 5px 2px 1px #d5795d",
     backgroundColor: "#fefcf9",
   },
-  textPadding: {
-    padding: "15px",
+  aboutText: {
+    whiteSpace: "pre-line",
+    lineHeight: 1.75,
+    fontSize: "1.25rem",
+    padding: theme.spacing(3),
   },
   image: {
     maxWidth: "100%",
@@ -114,7 +128,8 @@ export const useStyles = makeStyles((theme) => ({
     border: "2px solid #444045",
     boxShadow: "5px 5px 2px 1px #d5795d",
     color: "#444045",
-    backgroundColor: "#f6e5df",
+    backgroundColor: "#fefcf9", // offwhite
+    // backgroundColor: "#f6e5df", // light pink
     "&:hover": {
       backgroundColor: "#6e8778",
       color: "white",
