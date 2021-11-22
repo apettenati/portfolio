@@ -8,7 +8,9 @@ export default function Footer(): JSX.Element {
     <footer>
       <img className={classes.footerImg} src="/images/background.jpg"></img>
       <BottomNavigation className={classes.footerNav}>
-        <Typography>Created by Amanda Pettenati © 2021</Typography>
+        <Typography variant="body2">
+          Created by Amanda Pettenati © 2021
+        </Typography>
       </BottomNavigation>
     </footer>
   );

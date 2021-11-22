@@ -12,7 +12,7 @@ export default function Contact(): JSX.Element {
     return (
       <Grid item>
         <Button
-          className={classes.contactButton}
+          className={`${classes.border} ${classes.contactButton}`}
           startIcon={
             <Icon
               fr=""

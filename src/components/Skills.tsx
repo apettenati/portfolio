@@ -18,7 +18,7 @@ export default function Skills(): JSX.Element {
         >
           {header}
         </Typography>
-        <Card className={classes.skillCard}>
+        <Card className={`${classes.border} ${classes.skillCard}`}>
           <CardContent>
             <Grid container spacing={4} justifyContent="space-evenly">
               {skills.map((skill: ISkill, index) => {

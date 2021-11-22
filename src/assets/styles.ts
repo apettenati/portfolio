@@ -1,49 +1,28 @@
 import { makeStyles } from "@material-ui/core";
+import colors from "../assets/theme";
 
 export const useStyles = makeStyles((theme) => ({
-  codeLabels: {
-    margin: theme.spacing(1),
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
-    backgroundColor: "#d5795d", //dark pink
-    color: "white",
-    "&:hover": {
-      backgroundColor: "#6e8778",
-    },
-    "&:disabled": {
-      backgroundColor: "#d5795d", //dark pink
-      color: "white",
-      opacity: "60%",
-    },
-  },
-  marginTop: {
-    marginTop: theme.spacing(0.5),
+  border: {
+    borderRadius: theme.spacing(0.5),
+    backgroundColor: colors.paperBackground,
+    border: `2px solid ${colors.borderColor}`,
+    boxShadow: `5px 5px 2px 1px ${colors.borderHighlight}`,
   },
   //section
   section: {
-    scrollMarginTop: "100px",
+    // prevent navbar from covering start of component when clicking nav links
+    scrollMargin: theme.spacing(12) + "px",
     marginBottom: theme.spacing(12),
   },
   // skills
   skillCard: {
-    // background: "#eec9be",
-    // background: "#f2d7ce",
-    // backgroundColor: "#fbf2ef", // light pink
-    backgroundColor: "#fefcf9", // offwhite
-    // background: "white",
-    // boxShadow: "5px 5px 5px gray",
-    border: "2px solid #444045",
-    boxShadow: "5px 5px 2px 1px #d5795d",
     padding: theme.spacing(2.5),
     margin: theme.spacing(1.5),
   },
   skillSectionHeader: {
-    margin: theme.spacing(1),
-    marginBottom: theme.spacing(2),
-    fontWeight: "bold",
+    margin: theme.spacing(2, 1),
+    // create colored offset underline under sub-headers
     position: "relative",
-    color: "#444045",
-    // create colored offset underline under headers
     "&:before": {
       content: "no-open-quote",
       position: "absolute",
@@ -51,20 +30,15 @@ export const useStyles = makeStyles((theme) => ({
       bottom: "8px",
       width: "15%",
       height: "4px",
-      backgroundColor: "#d5795d", //dark pink
+      backgroundColor: colors.borderHighlight,
       transform: "skew(-12deg)",
-      // borderRadius: "2px",
-      // boxShadow: "0px 0px 2px 1px #d5795d",
       zIndex: "-1",
     },
   },
   headerUnderline: {
-    // prevent navbar from covering start of component when clicking nav links
     marginBottom: theme.spacing(6),
-    fontWeight: "bold",
-    position: "relative",
-    color: "#444045",
     // create colored offset underline under headers
+    position: "relative",
     "&:before": {
       content: "no-open-quote",
       position: "absolute",
@@ -72,47 +46,39 @@ export const useStyles = makeStyles((theme) => ({
       bottom: "18px",
       width: "40%",
       height: "14px",
-      background: "#d5795d",
-      backgroundColor: "#d5795d",
+      backgroundColor: colors.borderHighlight,
       transform: "skew(-12deg)",
       zIndex: "-1",
     },
   },
   // projects
-  chip: {
-    // fontSize: "1rem",
-    // border: "1px solid #444045",
-    backgroundColor: "#f3d7ce", // pink
-    margin: "2px",
-    // padding: theme.spacing(0.25),
-  },
-
-  cardHeader: {
-    paddingBottom: theme.spacing(0.5),
-    "& .MuiCardHeader-title": {
-      color: "#444045",
-      fontWeight: 700,
+  projectURL: {
+    margin: theme.spacing(1),
+    padding: theme.spacing("auto", 2),
+    backgroundColor: colors.borderHighlight,
+    color: "white",
+    "&:hover": {
+      backgroundColor: colors.buttonHover,
+    },
+    "&:disabled": {
+      backgroundColor: colors.borderHighlight,
+      color: "white",
+      opacity: "60%",
     },
   },
-  gap: { "& span": { gap: "5px" } },
-  projectsRoot: {
-    // backgroundColor: "#fbf2ef", // light pink
-    backgroundColor: "#fefcf9", // offwhite
-    border: "2px solid #444045",
-    boxShadow: "5px 5px 2px 1px #d5795d",
-    flexGrow: 1,
+  chip: {
+    backgroundColor: colors.chipColor,
+    margin: theme.spacing(0.25),
   },
-  media: {
+  cardHeader: {
+    paddingBottom: theme.spacing(0.5),
+  },
+  gap: { "& span": { gap: theme.spacing(0.5) } },
+  projectImage: {
     maxHeight: "300px",
     objectPosition: "top",
   },
   // about
-  border: {
-    borderRadius: "4px",
-    border: "2px solid #444045",
-    boxShadow: "5px 5px 2px 1px #d5795d",
-    backgroundColor: "#fefcf9",
-  },
   aboutText: {
     whiteSpace: "pre-line",
     lineHeight: 1.75,
@@ -125,19 +91,16 @@ export const useStyles = makeStyles((theme) => ({
   },
   //contact
   contactButton: {
-    border: "2px solid #444045",
-    boxShadow: "5px 5px 2px 1px #d5795d",
-    color: "#444045",
-    backgroundColor: "#fefcf9", // offwhite
-    // backgroundColor: "#f6e5df", // light pink
+    color: colors.textColor,
     "&:hover": {
-      backgroundColor: "#6e8778",
+      backgroundColor: colors.buttonHover,
       color: "white",
     },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "20px",
-      padding: "20px 30px",
-    },
+    padding: theme.spacing(2, 3),
+    width: "180px", // create fixed length so buttons are the same size
+    // [theme.breakpoints.up("sm")]: {
+    //   padding: "20px 30px",
+    // },
   },
   iconMargin: {
     marginRight: theme.spacing(0.5),
@@ -147,7 +110,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   //skill
   skillText: {
-    marginTop: "5px",
+    marginTop: theme.spacing(0.5),
     fontWeight: 500,
   },
   skillGrid: {
@@ -158,21 +121,17 @@ export const useStyles = makeStyles((theme) => ({
   },
   //appbar
   appbar: {
-    backgroundColor: "#6e8778",
-  },
-  toolbar: {
-    // paddingLeft: theme.spacing(9),
-    // paddingRight: theme.spacing(9),
+    backgroundColor: colors.headerFooter,
   },
   header: {
     [theme.breakpoints.down("xs")]: {
-      display: "none",
+      display: "none", // hide name on mobile
     },
     width: "50%",
-    flexGrow: 1,
+    flexGrow: 1, // fix wrapping of name
   },
   appbarButton: {
-    margin: "10px",
+    margin: theme.spacing(1),
   },
   //footer
   footerImg: {
@@ -183,7 +142,7 @@ export const useStyles = makeStyles((theme) => ({
     mixBlendMode: "hard-light",
   },
   footerNav: {
-    backgroundColor: "#6e8778",
+    backgroundColor: colors.headerFooter,
     width: "100%",
     color: "white",
     margin: "-5px 0",

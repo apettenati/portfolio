@@ -22,10 +22,10 @@ export default function Projects(): JSX.Element {
   function Project({ ...project }: IProject) {
     return (
       <Grid xs={12} md={6} lg={4} item>
-        <Card className={classes.projectsRoot}>
+        <Card className={classes.border}>
           <CardMedia
             component="img"
-            className={classes.media}
+            className={classes.projectImage}
             image={project.image}
             title={project.name}
           />
@@ -45,28 +45,28 @@ export default function Projects(): JSX.Element {
             <Typography paragraph variant="body1" component="div">
               {project.description}
             </Typography>
-            <Grid
-              container
-              justifyContent="center"
-              className={classes.marginTop}
-            >
+            <Grid container justifyContent="center">
               <Button
+                rel="noreferrer"
+                target="_blank"
                 variant="contained"
-                className={classes.codeLabels}
+                className={classes.projectURL}
                 disabled={project.liveUrl === ""}
                 href={project.liveUrl}
                 startIcon={<Link />}
               >
-                <Typography variant="button">Demo</Typography>
+                Demo
               </Button>
               <Button
+                rel="noreferrer"
+                target="_blank"
                 variant="contained"
-                className={classes.codeLabels}
+                className={classes.projectURL}
                 disabled={project.codeUrl === ""}
                 href={project.codeUrl}
                 startIcon={<GitHub />}
               >
-                <Typography variant="button">Code</Typography>
+                Code
               </Button>
             </Grid>
           </CardContent>
