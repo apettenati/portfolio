@@ -21,8 +21,8 @@ export default function Projects(): JSX.Element {
 
   function Project({ ...project }: IProject) {
     return (
-      <Grid xs={12} md={6} lg={4} item>
-        <Card className={classes.border}>
+      <Grid style={{ display: "flex" }} xs={12} md={6} lg={4} item>
+        <Card className={`${classes.border} ${classes.projectCard}`}>
           <CardMedia
             component="img"
             className={classes.projectImage}
@@ -42,9 +42,11 @@ export default function Projects(): JSX.Element {
                 );
               })}
             </Typography>
-            <Typography paragraph variant="body1" component="div">
+            <Typography variant="body1" component="div">
               {project.description}
             </Typography>
+          </CardContent>
+          <CardContent style={{ marginTop: "auto" }}>
             <Grid container justifyContent="center">
               <Button
                 rel="noreferrer"
@@ -77,7 +79,7 @@ export default function Projects(): JSX.Element {
 
   return (
     <Section header="Projects">
-      <Grid container spacing={4}>
+      <Grid container alignItems="stretch" spacing={4}>
         {projects.map((project, index) => {
           return <Project key={index} {...project} />;
         })}

@@ -52,8 +52,13 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   // projects
+  projectCard: {
+    display: "flex",
+    justifyContent: "flex-start",
+    flexDirection: "column",
+  },
   projectURL: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(0, 1),
     padding: theme.spacing("auto", 2),
     backgroundColor: colors.borderHighlight,
     color: "white",
@@ -75,7 +80,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   gap: { "& span": { gap: theme.spacing(0.5) } },
   projectImage: {
-    maxHeight: "300px",
+    height: "260px",
     objectPosition: "top",
   },
   // about
