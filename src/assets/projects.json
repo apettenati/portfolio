@@ -1,5 +1,5 @@
 {
-	"about": "Welcome to my portfolio! \n\n I'm a self-taught web developer. I embarked on this journey after nearly a decade in the Finance industry. After a successful career in management, I decided solving complex problems as an independent contributor is my passion. \n\n After 2 batches at the Recurse Center, building a number of solo and collaborative projects, and volunteering for some great local causes, I'm ready to begin my first professional role as a full-stack or front-end software engineer for a company that values my self-motivation and eagerness to learn.",
+	"about": "Welcome to my portfolio! \n\n I'm a self-taught web developer embarking on this journey with nearly a decade of experience in the Finance industry. After a successful career in management, I decided solving complex problems as an independent contributor is my passion. \n\n I previously completed two programming retreats at the Recurse Center, built a number of solo and collaborative projects, and volunteered for some local causes to gain experience with an existing code base. Now, I'm ready to begin my first professional role as a full-stack or front-end software engineer for a company that values my self-motivation and eagerness to learn.",
 	"skills": [
 		{"header" : "Languages", "skills": [
 			{"name": "JavaScript", "icon": "logos:javascript"},
