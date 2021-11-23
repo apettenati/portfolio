@@ -50,6 +50,9 @@ export const useStyles = makeStyles((theme) => ({
       transform: "skew(-12deg)",
       zIndex: "-1",
     },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "5rem",
+    },
   },
   // projects
   projectCard: {
@@ -103,9 +106,6 @@ export const useStyles = makeStyles((theme) => ({
     },
     padding: theme.spacing(2, 3),
     width: "180px", // create fixed length so buttons are the same size
-    // [theme.breakpoints.up("sm")]: {
-    //   padding: "20px 30px",
-    // },
   },
   iconMargin: {
     marginRight: theme.spacing(0.5),
