@@ -25,7 +25,7 @@
 	"projects": [
 		{
 			"name": "RC Collaborator",
-			"description": "Full-stack application for Recursers to showcase projects and foster collaboration. Implemented authentication with RC's OAuth API, established end-to-end and unit tests, created a responsive UI, and established a CI and deployment pipeline using GitHub Actions.",
+			"description": "Full-stack application for Recursers to showcase projects and foster collaboration. Implemented authentication OAuth, established end-to-end and unit tests, created a responsive UI, and established a CI/CD pipeline.",
 			"liveUrl": "https://projects.recurse.com/",
 			"codeUrl": "https://github.com/artsze/rc-prjkt",
 			"tags": ["react", "typescript", "node/express", "mongodb", "oauth2.0", "cypress", "jest", "materialui", "react-query"],
@@ -34,10 +34,10 @@
 		},
 		{
 			"name": "GitHub Star Tagger",
-			"description": "Application that fetches starred repos from GitHub's REST API and allows users to add and filter tags.",
+			"description": "Application that fetches starred reponsitories from GitHub's REST API. Allows users to add tags to the repos to categorize them to make them easier to find.",
 			"liveUrl": "https://flamanda.com/github-star-tagger/",
 			"codeUrl": "https://github.com/apettenati/github-star-tagger",
-			"tags": ["typescript", "react", "rest api", "bootstrap"],
+			"tags": ["typescript", "react", "rest api", "bootstrap", "react-router", "react-select"],
 			"image": "images/github-star-tagger.png",
 			"date": "May 2021"
 		},
@@ -51,7 +51,7 @@
 			"date": "January 2021"
 		},
 		{
-			"name": "MST Waypoint to Trackpoint Converter",
+			"name": "MST Waypoint Converter",
 			"description": "Conversion tool for the Mountains to Sea Trail, a local nonprofit, to map waypoint data to the closest corresponding trackpoint. Converts data into a standardized CSV format for download.",
 			"liveUrl": "https://apettenati.github.io/mountains-to-sea-trail/",
 			"codeUrl": "https://github.com/apettenati/mountains-to-sea-trail",
@@ -69,8 +69,8 @@
 			"date": "December 2020"
 		},
 		{
-			"name": "\"Pearl\"-sonal Finance Hacker",
-			"description": "Personal Finance Flowchart and checklist created at Pearl Hacks 2021 Hackathon ",
+			"name": "\"Pearl\"-sonal Finance Tool",
+			"description": "Personal Finance Flowchart built at the Pearl Hacks 2021 Hackathon for educating college students about personal finance. Contains a checklist with steps to establish your finances and educational resources with more information.",
 			"liveUrl": "https://apettenati.github.io/pearlhacks2021/index.html",
 			"codeUrl": "https://github.com/apettenati/pearlhacks2021",
 			"tags": ["javascript", "HTML", "CSS"],
