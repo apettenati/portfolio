@@ -28,9 +28,18 @@
 			"description": "Full-stack application for Recursers to showcase projects and foster collaboration. Implemented authentication OAuth, established end-to-end and unit tests, created a responsive UI, and established a CI/CD pipeline.",
 			"liveUrl": "https://projects.recurse.com/",
 			"codeUrl": "https://github.com/artsze/rc-prjkt",
-			"tags": ["react", "typescript", "node/express", "mongodb", "oauth2.0", "cypress", "jest", "materialui", "react-query"],
+			"tags": ["react", "typescript", "node/express", "mongodb", "oauth2.0", "cypress", "jest", "material-ui", "react-query"],
 			"image": "images/rc-projects.png",
 			"date": "August 2021"
+		},
+		{
+			"name": "Portfolio",
+			"description": "Personal portfolio to showcase about information, projects, skills and contact details. Built with custom webpack configuration without using create-react-app. Implemented responsive design.",
+			"liveUrl": "http://portfolio.flamanda.com/",
+			"codeUrl": "https://github.com/apettenati/portfolio",
+			"tags": ["react", "typescript", "material-ui", "webpack"],
+			"image": "images/portfolio.png",
+			"date": "November 2021"
 		},
 		{
 			"name": "GitHub Star Tagger",
