@@ -6,19 +6,12 @@ export default function Projects(): JSX.Element {
   const classes = useStyles();
   const headers = Object.keys(data);
 
-  function scrollToSection(id: string) {
-    const section = document.querySelector(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
   function HeaderLink({ header }: { header: string }) {
     return (
       <Button
         className={classes.appbarButton}
-        onClick={() => scrollToSection(`#${header}`)}
         color="inherit"
+        href={`#${header}`}
       >
         {header}
       </Button>
